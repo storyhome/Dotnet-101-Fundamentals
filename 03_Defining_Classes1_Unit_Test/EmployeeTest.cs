@@ -3,6 +3,7 @@ using System.Runtime.InteropServices;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using _03_Defining_Classes_1;
 
+
 namespace _03_Defining_Classes1_Unit_Test
 {
     [TestClass]
@@ -22,6 +23,7 @@ namespace _03_Defining_Classes1_Unit_Test
             _employee.NumberofHoursOnClock = 4000;
             _employee.Age = 27;
         }
+        
 
         [TestMethod]
         public void Employee_SetLastName_IsProperString()

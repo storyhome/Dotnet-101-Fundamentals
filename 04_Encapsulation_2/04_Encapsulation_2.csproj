@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3850674C-7BD5-4AA0-A251-3DDA234CC4EB}</ProjectGuid>
+    <ProjectGuid>{615BF079-9C7C-4465-BE07-0E0863D6EE22}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_03Defining_Classes_2</RootNamespace>
-    <AssemblyName>_03Defining_Classes_2</AssemblyName>
+    <RootNamespace>_04_Encapsulation_2</RootNamespace>
+    <AssemblyName>04_Encapsulation_2</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Room.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

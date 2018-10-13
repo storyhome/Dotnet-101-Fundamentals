@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{30847A66-5281-4987-AFA2-CCDB8D9ED4C4}</ProjectGuid>
+    <ProjectGuid>{75BAC1E7-0456-4C6C-8C0E-43F6F0B5A45E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_03_Defining_Classes1_Unit_Test</RootNamespace>
-    <AssemblyName>03_Defining_Classes1_Unit_Test</AssemblyName>
+    <RootNamespace>_07_Business_Challenge_1_Unit_Test</RootNamespace>
+    <AssemblyName>07_Business_Challenge_1_Unit_Test</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -48,27 +48,16 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EmployeeTest.cs" />
+    <Compile Include="MenuTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\03 Defining_Classes_1\03 Defining_Classes_1.csproj">
-      <Project>{8C727005-5568-4B14-8A83-C8166306570E}</Project>
-      <Name>03 Defining_Classes_1</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\03_Defining_Classes_2\03_Defining_Classes_2.csproj">
-      <Project>{44e9802c-d4d2-4ee1-bcf9-d4c093f21359}</Project>
-      <Name>03_Defining_Classes_2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Employee_Repository\Employee_Repository.csproj">
-      <Project>{CA06B90F-0223-4C07-BA43-6D241359609B}</Project>
-      <Name>Employee_Repository</Name>
+    <ProjectReference Include="..\07_Business_Challenge_1\07_Business_Challenge_1.csproj">
+      <Project>{EAFEFC14-8D8A-4A6F-B5FB-198F4DF8F93C}</Project>
+      <Name>07_Business_Challenge_1</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
