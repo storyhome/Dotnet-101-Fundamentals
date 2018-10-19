@@ -29,19 +29,18 @@ namespace _08_Packman_Challenge
         private int packManTotal = 5000;
         private int packManLives = 3;
         private int ghostCount = 1;
+        private bool ExtraLife = true;
+        private int ghostBonus = 1;
 
 
-
-
-
+        
         public void GetInput(string filePath)
         {
            var text = System.IO.File.ReadAllText(filePath);
            GameMoves = text.Split(',').ToList();
         }
 
-
-       
+               
         public void PlayGame( )
         {
 
@@ -55,7 +54,8 @@ namespace _08_Packman_Challenge
                 {
                     case "VulnerableGhost":
                         {
-                            packManTotal += (MoveScore[move] * ghostCount);
+                            packManTotal += (MoveScore[move] * ghostBonus);
+                            ghostBonus = ghostCount * 2;
                             ++ghostCount;
                             break;
                         }
@@ -69,6 +69,13 @@ namespace _08_Packman_Challenge
                             packManTotal += (MoveScore[move]);
                             break;
                         }
+                }
+
+                if (packManTotal >= 10000 && ExtraLife)
+                {
+                    
+                    ExtraLife = false;
+                    ++packManLives;
                 }
             }
 
