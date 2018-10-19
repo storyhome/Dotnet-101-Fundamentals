@@ -59,6 +59,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_Polymorphism_Demo", "07_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00_General_Concepts_Dependency_Injection", "00_General_Concepts_Dependency_Injection\00_General_Concepts_Dependency_Injection.csproj", "{F0EE1B10-F29F-44AA-A899-7D40CC02F77D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_Badge_Challenge", "08_Badge_Challenge\08_Badge_Challenge.csproj", "{193241E8-3FF1-4534-9BD1-61136A704374}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_Packman_Challenge", "08_Packman_Challenge\08_Packman_Challenge.csproj", "{DC0F2F75-F5AC-4D32-A1A3-DF98B3587471}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -177,6 +181,14 @@ Global
 		{F0EE1B10-F29F-44AA-A899-7D40CC02F77D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0EE1B10-F29F-44AA-A899-7D40CC02F77D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0EE1B10-F29F-44AA-A899-7D40CC02F77D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{193241E8-3FF1-4534-9BD1-61136A704374}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{193241E8-3FF1-4534-9BD1-61136A704374}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{193241E8-3FF1-4534-9BD1-61136A704374}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{193241E8-3FF1-4534-9BD1-61136A704374}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC0F2F75-F5AC-4D32-A1A3-DF98B3587471}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC0F2F75-F5AC-4D32-A1A3-DF98B3587471}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC0F2F75-F5AC-4D32-A1A3-DF98B3587471}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC0F2F75-F5AC-4D32-A1A3-DF98B3587471}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,16 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _00_General_Concepts_Dependency_Injection
+namespace _08_Packman_Challenge
 {
     class Program
     {
         static void Main(string[] args)
         {
-            ProgramUI program = new ProgramUI(new BadConsole());
+            ProgramUI program = new ProgramUI();
             program.Run();
         }
-    }
 
-   
+
+
+    }
 }
