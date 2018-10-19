@@ -24,24 +24,18 @@ namespace _08_Packman_Challenge
             { "Dot", 10 },
             { "VulnerableGhost", 200 }
         };
-
-       
         private int packManTotal = 5000;
         private int packManLives = 3;
-        private int ghostCount = 1;
+        //private int ghostCount = 1;
+        private int ghostCount = 0;
         private bool ExtraLife = true;
         private int ghostBonus = 1;
-
-
-        
         public void GetInput(string filePath)
         {
-           var text = System.IO.File.ReadAllText(filePath);
-           GameMoves = text.Split(',').ToList();
+            var text = System.IO.File.ReadAllText(filePath);
+            GameMoves = text.Split(',').ToList();
         }
-
-               
-        public void PlayGame( )
+        public void PlayGame()
         {
 
             foreach (string move in GameMoves)
@@ -54,14 +48,16 @@ namespace _08_Packman_Challenge
                 {
                     case "VulnerableGhost":
                         {
-                            packManTotal += (MoveScore[move] * ghostBonus);
-                            ghostBonus = ghostCount * 2;
-                            ++ghostCount;
+                            var newPoints = Convert.ToInt32(200 * Math.Pow(2, ghostCount++));
+                            //packManTotal += (MoveScore[move] * ghostBonus);
+                            //ghostBonus = ghostCount * 2;
+                            packManTotal += newPoints;
+                            //ghostCount++;
                             break;
                         }
                     case "InvincibleGhost":
                         {
-                            --packManLives;
+                            packManLives--;
                             break;
                         }
                     default:
@@ -73,10 +69,11 @@ namespace _08_Packman_Challenge
 
                 if (packManTotal >= 10000 && ExtraLife)
                 {
-                    
+
                     ExtraLife = false;
                     ++packManLives;
                 }
+
             }
 
             Console.WriteLine("Game Over, Final Score:{0}", packManTotal);
